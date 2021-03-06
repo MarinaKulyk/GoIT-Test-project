@@ -1,0 +1,17 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,KAAK,AAAC,CACJ,UAAU,CAAE,UAAU,CACvB,AACD,AAAA,CAAC,CACD,CAAC,AAAA,QAAQ,CACT,CAAC,AAAA,OAAO,AAAC,CACP,UAAU,CAAE,OAAO,CACpB,AACD,AAAA,KAAK,AAAC,CACJ,WAAW,CDTD,YAAY,CAAE,UAAU,CCUlC,gBAAgB,CDGM,IAAO,CCF7B,KAAK,CDHW,OAAO,CCIxB,AACD,AAAA,KAAK,AAAC,CACJ,UAAU,CAAE,IAAI,CAChB,OAAO,CAAE,CAAC,CACV,MAAM,CAAE,CAAC,CACV,AACD,AAAA,KAAK,AAAC,CACJ,eAAe,CAAE,IAAI,CACtB,AACD,AAAA,IAAI,AAAC,CACH,OAAO,CAAE,KAAK,CACf",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/utils/_variables.scss",
+        "../sass/base/_base.scss",
+        "../sass/components/_social-link.scss",
+        "../sass/layout/_header.scss",
+        "../sass/layout/_hero.scss",
+        "../sass/layout/_work.scss",
+        "../sass/layout/_team.scss",
+        "../sass/layout/_footer.scss"
+    ],
+    "names": [],
+    "file": "main.min.css"
+}
