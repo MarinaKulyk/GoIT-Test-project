@@ -1,0 +1,57 @@
+.footer {
+  padding-bottom: 10px;
+}
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-info {
+  font-family: $main-font;
+  color: $secondary-titel-color;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: start;
+}
+.footer-form {
+  display: flex;
+}
+.footer-form input {
+  padding-left: 15px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(231, 231, 231);
+  background-color: rgb(255, 255, 255);
+  width: 234px;
+  height: 44px;
+}
+.footer-form-button {
+  padding: 0;
+  width: 150px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  background: $akcent-color;
+  border: none;
+}
+.subscribe {
+  padding-left: 35px;
+  font-family: $main-font;
+  color: $main-titel-color;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: end;
+}
+.Shape_4 {
+  background-color: rgb(229, 229, 229);
+  position: absolute;
+  left: 360px;
+  top: 2472px;
+  width: 1200px;
+  height: 1px;
+  z-index: 101;
+}

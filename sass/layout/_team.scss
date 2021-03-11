@@ -1,0 +1,90 @@
+.team {
+  padding-top: 45px;
+  padding-bottom: 82px;
+  text-align: center;
+}
+.team-titel {
+  margin-top: 0;
+  margin-bottom: 42px;
+  font-family: $main-font;
+  color: $secondary-titel-color;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 1.2;
+}
+.team-text {
+  margin-top: 0;
+  margin-bottom: 95px;
+  font-family: $secondary-font;
+  color: $main-text-color;
+  line-height: 1.6;
+  font-size: 15px;
+  text-align: center;
+}
+.team-line {
+  margin-bottom: 45px;
+}
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+.team-item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.team-img {
+  width: 380px;
+  height: 470px;
+  margin-bottom: 30px;
+}
+.team-name {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-family: $main-font;
+  color: $secondary-titel-color;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.2;
+}
+.team-position {
+  font-family: $secondary-font;
+  color: $main-text-color;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.team-social-icon {
+  padding-top: 15px;
+  fill: $social-icon-fill;
+}
+.team-social-icon-background {
+  background-color: rgb(252, 227, 138);
+  width: 55px;
+  height: 56px;
+}
+.team-social-list-wraper {
+  display: none;
+}
+.team-social-list {
+  display: flex;
+  justify-content: center;
+}
+.facebook {
+  width: 13px;
+  height: 26px;
+}
+
+.twitter {
+  width: 26px;
+  height: 22px;
+}
+.pinterest {
+  width: 21px;
+  height: 26px;
+}
+.instagram {
+  width: 26px;
+  height: 26px;
+}
