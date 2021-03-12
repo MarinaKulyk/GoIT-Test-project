@@ -48,11 +48,16 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  width: calc((100%-60px) / 3);
 
-  //   &:nth-child(-n + 4) {
-  //     margin-right: 70px;
-  //   }
+  &:not(3n + 1) {
+    margin-right: 70px;
+  }
+  &:nth-child(-n + 2) {
+    margin-bottom: 100px;
+  }
 }
+
 .work-name {
   font-family: $main-font;
   color: $secondary-titel-color;

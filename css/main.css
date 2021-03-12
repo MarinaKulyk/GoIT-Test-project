@@ -31,13 +31,16 @@
 
 .container {
   max-width: 1180px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .font-container {
   width: 100%;
   height: 100%;
-  background-color: #95e1d3;
+  background-color: #fce38a;
+  background-image: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url(../image/background/picture.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .header-container,
@@ -78,12 +81,32 @@
 }
 
 .nav-link {
+  position: relative;
   font-family: "Montserrat", sans-serif;
   color: white;
   font-size: 14px;
   line-height: 1.2;
   text-transform: uppercase;
   text-align: center;
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: #fce38a;
+}
+
+.about {
+  color: #fce38a;
+}
+
+.about:after {
+  content: "";
+  background-color: #fce38a;
+  position: absolute;
+  left: 0;
+  top: 24px;
+  display: inline-block;
+  width: 100%;
+  height: 3px;
 }
 
 .hero {
@@ -182,6 +205,15 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  width: calc((100%-60px) / 3);
+}
+
+.work-item:not(3n + 1) {
+  margin-right: 70px;
+}
+
+.work-item:nth-child(-n + 2) {
+  margin-bottom: 100px;
 }
 
 .work-name {
@@ -247,6 +279,12 @@
   width: 380px;
   height: 470px;
   margin-bottom: 30px;
+  background-color: #95e1d3;
+}
+
+.team-img:hover, .team-img:focus {
+  cursor: pointer;
+  background-image: linear-gradient(#a2a8ec, #2f303a);
 }
 
 .team-name {
@@ -267,19 +305,36 @@
   line-height: 1.6;
 }
 
+.team-social-item {
+  background-color: #fce38a;
+  width: 55px;
+  height: 56px;
+  border: 1px;
+  border-color: #f38181;
+}
+
+.team-social-item:hover, .team-social-item:focus {
+  background-color: #f38181;
+  cursor: pointer;
+}
+
 .team-social-icon {
   padding-top: 15px;
   fill: #f38181;
 }
 
-.team-social-icon-background {
-  background-color: #fce38a;
-  width: 55px;
-  height: 56px;
+.team-social-item:hover .team-social-icon,
+.team-social-item:focus .team-social-icon {
+  fill: #ffffff;
 }
 
 .team-social-list-wraper {
   display: none;
+}
+
+.team-img:hover .team-social-list-wraper,
+.team-img:focus .team-social-list-wraper {
+  display: flex;
 }
 
 .team-social-list {
@@ -346,7 +401,7 @@
   height: 48px;
   display: inline-flex;
   align-items: center;
-  background: #95e1d3;
+  background: #fce38a;
   border: none;
 }
 
@@ -359,15 +414,5 @@
   font-size: 14px;
   line-height: 1.2;
   text-align: end;
-}
-
-.Shape_4 {
-  background-color: #e5e5e5;
-  position: absolute;
-  left: 360px;
-  top: 2472px;
-  width: 1200px;
-  height: 1px;
-  z-index: 101;
 }
 /*# sourceMappingURL=main.css.map */

@@ -38,6 +38,13 @@
   width: 380px;
   height: 470px;
   margin-bottom: 30px;
+  background-color: $green-akcent-color;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-image: linear-gradient(rgb(162, 168, 236), rgb(47, 48, 58));
+  }
 }
 .team-name {
   margin-top: 0;
@@ -55,17 +62,38 @@
   font-size: 15px;
   line-height: 1.6;
 }
-.team-social-icon {
-  padding-top: 15px;
-  fill: $social-icon-fill;
-}
-.team-social-icon-background {
+.team-social-item {
   background-color: rgb(252, 227, 138);
   width: 55px;
   height: 56px;
+  border: 1px;
+  // border-right: 1px;
+  border-color: $social-icon-fill;
+
+  &:hover,
+  &:focus {
+    background-color: $social-icon-fill;
+    cursor: pointer;
+  }
 }
+
+.team-social-icon {
+  padding-top: 15px;
+  fill: $social-icon-fill;
+
+  .team-social-item:hover &,
+  .team-social-item:focus & {
+    fill: $main-background-color;
+  }
+}
+
 .team-social-list-wraper {
   display: none;
+
+  .team-img:hover &,
+  .team-img:focus & {
+    display: flex;
+  }
 }
 .team-social-list {
   display: flex;
@@ -75,7 +103,6 @@
   width: 13px;
   height: 26px;
 }
-
 .twitter {
   width: 26px;
   height: 22px;
