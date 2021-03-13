@@ -34,17 +34,98 @@
     margin-right: 30px;
   }
 }
-.team-img {
+.photo-background {
+  background-color: $green-akcent-color;
   width: 380px;
   height: 470px;
   margin-bottom: 30px;
-  background-color: $green-akcent-color;
+}
+
+.team-img {
+  position: relative;
+  width: 380px;
+  height: 470px;
 
   &:hover,
   &:focus {
     cursor: pointer;
-    background-image: linear-gradient(rgb(162, 168, 236), rgb(47, 48, 58));
   }
+}
+.photo-wrapper {
+  position: relative;
+  width: 380px;
+  height: 470px;
+  overflow: hidden;
+
+  &:hover {
+    top: -10px;
+    left: -10px;
+    .team-social-list-wraper {
+      display: flex;
+      transform: translateX(0);
+    }
+  }
+}
+.team-social-list-wraper {
+  display: none;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateX(0);
+  width: 100%;
+  height: 100%;
+
+  background-image: linear-gradient(
+    rgba(243, 129, 129, 0.7),
+    rgba(252, 227, 138, 0.7)
+  );
+}
+.team-social-list {
+  display: flex;
+  justify-content: center;
+  padding: 207px 78px 207px 78px;
+}
+.team-social-item {
+  background-color: rgb(252, 227, 138);
+  width: 55px;
+  height: 56px;
+
+  &:not(:last-child) {
+    border-right: 1px solid $social-icon-fill;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $social-icon-fill;
+    cursor: pointer;
+  }
+}
+.team-social-icon {
+  padding-top: 15px;
+  fill: $social-icon-fill;
+
+  .team-social-item:hover &,
+  .team-social-item:focus & {
+    fill: $main-background-color;
+  }
+}
+
+.facebook {
+  width: 13px;
+  height: 26px;
+}
+.twitter {
+  width: 26px;
+  height: 22px;
+}
+.pinterest {
+  width: 21px;
+  height: 26px;
+}
+.instagram {
+  width: 26px;
+  height: 26px;
 }
 .team-name {
   margin-top: 0;
@@ -61,57 +142,4 @@
   font-style: italic;
   font-size: 15px;
   line-height: 1.6;
-}
-.team-social-item {
-  background-color: rgb(252, 227, 138);
-  width: 55px;
-  height: 56px;
-  border: 1px;
-  // border-right: 1px;
-  border-color: $social-icon-fill;
-
-  &:hover,
-  &:focus {
-    background-color: $social-icon-fill;
-    cursor: pointer;
-  }
-}
-
-.team-social-icon {
-  padding-top: 15px;
-  fill: $social-icon-fill;
-
-  .team-social-item:hover &,
-  .team-social-item:focus & {
-    fill: $main-background-color;
-  }
-}
-
-.team-social-list-wraper {
-  display: none;
-
-  .team-img:hover &,
-  .team-img:focus & {
-    display: flex;
-  }
-}
-.team-social-list {
-  display: flex;
-  justify-content: center;
-}
-.facebook {
-  width: 13px;
-  height: 26px;
-}
-.twitter {
-  width: 26px;
-  height: 22px;
-}
-.pinterest {
-  width: 21px;
-  height: 26px;
-}
-.instagram {
-  width: 26px;
-  height: 26px;
 }

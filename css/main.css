@@ -275,42 +275,65 @@
   margin-right: 30px;
 }
 
-.team-img {
+.photo-background {
+  background-color: #95e1d3;
   width: 380px;
   height: 470px;
   margin-bottom: 30px;
-  background-color: #95e1d3;
+}
+
+.team-img {
+  position: relative;
+  width: 380px;
+  height: 470px;
 }
 
 .team-img:hover, .team-img:focus {
   cursor: pointer;
-  background-image: linear-gradient(#a2a8ec, #2f303a);
 }
 
-.team-name {
-  margin-top: 0;
-  margin-bottom: 15px;
-  font-family: "Montserrat", sans-serif;
-  color: #333333;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 1.2;
+.photo-wrapper {
+  position: relative;
+  width: 380px;
+  height: 470px;
+  overflow: hidden;
 }
 
-.team-position {
-  font-family: "Roboto", sans-serif;
-  color: #999999;
-  font-style: italic;
-  font-size: 15px;
-  line-height: 1.6;
+.photo-wrapper:hover {
+  top: -10px;
+  left: -10px;
+}
+
+.photo-wrapper:hover .team-social-list-wraper {
+  display: flex;
+  transform: translateX(0);
+}
+
+.team-social-list-wraper {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateX(0);
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(243, 129, 129, 0.7), rgba(252, 227, 138, 0.7));
+}
+
+.team-social-list {
+  display: flex;
+  justify-content: center;
+  padding: 207px 78px 207px 78px;
 }
 
 .team-social-item {
   background-color: #fce38a;
   width: 55px;
   height: 56px;
-  border: 1px;
-  border-color: #f38181;
+}
+
+.team-social-item:not(:last-child) {
+  border-right: 1px solid #f38181;
 }
 
 .team-social-item:hover, .team-social-item:focus {
@@ -326,20 +349,6 @@
 .team-social-item:hover .team-social-icon,
 .team-social-item:focus .team-social-icon {
   fill: #ffffff;
-}
-
-.team-social-list-wraper {
-  display: none;
-}
-
-.team-img:hover .team-social-list-wraper,
-.team-img:focus .team-social-list-wraper {
-  display: flex;
-}
-
-.team-social-list {
-  display: flex;
-  justify-content: center;
 }
 
 .facebook {
@@ -360,6 +369,24 @@
 .instagram {
   width: 26px;
   height: 26px;
+}
+
+.team-name {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.team-position {
+  font-family: "Roboto", sans-serif;
+  color: #999999;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 1.6;
 }
 
 .footer {
@@ -401,7 +428,7 @@
   height: 48px;
   display: inline-flex;
   align-items: center;
-  background: #fce38a;
+  background: #95e1d3;
   border: none;
 }
 
