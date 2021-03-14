@@ -476,4 +476,8 @@
   line-height: 1.2;
   text-align: end;
 }
+
+.subscribe:hover, .subscribe:focus {
+  cursor: pointer;
+}
 /*# sourceMappingURL=main.css.map */
