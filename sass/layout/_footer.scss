@@ -1,5 +1,17 @@
 .footer {
+  position: relative;
   padding-bottom: 10px;
+}
+.footer-container::before {
+  content: "";
+  background-color: #e5e5e5;
+  position: absolute;
+  left: 240px;
+  top: -12px;
+
+  display: inline-block;
+  width: 1200px;
+  height: 1px;
 }
 .footer-container {
   display: flex;
@@ -7,13 +19,15 @@
   align-items: center;
   justify-content: space-between;
 }
-
 .footer-info {
   font-family: $main-font;
   color: $secondary-titel-color;
   font-size: 14px;
   line-height: 1.2;
   text-align: start;
+}
+.footer-info-color {
+  color: #f48989;
 }
 .footer-form {
   display: flex;
