@@ -309,17 +309,21 @@
 }
 
 .photo-wrapper:hover .team-social-list-wraper {
-  display: flex;
-  transition-delay: 2000ms;
+  opacity: 1;
+  transition-property: all;
+  transition-duration: 1000ms;
+  transition-delay: 800ms;
 }
 
 .photo-wrapper:hover .team-social-list {
-  display: flex;
-  transition-delay: 3000ms;
+  opacity: 1;
+  transition-property: all;
+  transition-duration: 1000ms;
+  transition-delay: 1500ms;
 }
 
 .team-social-list-wraper {
-  display: none;
+  opacity: 0;
   position: absolute;
   left: 0;
   top: 0;
@@ -330,7 +334,8 @@
 }
 
 .team-social-list {
-  display: none;
+  display: flex;
+  opacity: 0;
   justify-content: center;
   padding: 207px 78px 207px 78px;
 }
@@ -348,6 +353,8 @@
 .team-social-item:hover, .team-social-item:focus {
   background-color: #f38181;
   cursor: pointer;
+  transition-property: all;
+  transition-duration: 500ms;
 }
 
 .team-social-icon {
@@ -358,6 +365,8 @@
 .team-social-item:hover .team-social-icon,
 .team-social-item:focus .team-social-icon {
   fill: #ffffff;
+  transition-property: all;
+  transition-duration: 250ms;
 }
 
 .facebook {
